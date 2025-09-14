@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Flask url_for Demo</title>
+</head>
+
+<body>
+    <nav>
+        <!-- url_for का इस्तेमाल links generate करने में -->
+        <a href="{{ url_for('index') }}">Home</a> |
+        <a href="{{ url_for('about') }}">About</a> |
+        <a href="{{ url_for('profile', username='Ajay') }}">Profile</a>
+    </nav>
+    <hr>
+    <!-- child template content यहाँ आएगा -->
+    {% block content %}{% endblock %}
+</body>
+
+</html>
