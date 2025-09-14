@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Blog Home Page</h2>
+<p>Welcome to the blog! Here are some sample posts:</p>
+<ul>
+    <li><a href="{{ url_for('blog.post', post_id=1) }}">Post 1</a></li>
+    <li><a href="{{ url_for('blog.post', post_id=2) }}">Post 2</a></li>
+</ul>
+{% endblock %}
